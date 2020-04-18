@@ -37,7 +37,7 @@
 # Import the Runway SDK. Please install it first with
 # `pip install runway-python`.
 import runway
-from runway.data_types import number, text, image ,files
+from runway.data_types import number, text, image
 from example_model import ExampleModel
 
 # Setup the model, initialize weights, set the configs of the model, etc.

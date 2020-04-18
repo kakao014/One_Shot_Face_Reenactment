@@ -12,13 +12,12 @@ from loader.dataset_loader_demo import DatasetLoaderDemo
 from fusion.affineFace import *
 
 
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--pose_path', type=str, default='data/poseGuide/imgs', help='path to pose guide images')
-    parser.add_argument('--ref_path', type=str, default='data/reference/imgs', help='path to appearance/reference images')
-    parser.add_argument('--pose_lms', type=str, default='data/poseGuide/lms_poseGuide.out', help='path to pose guide landmark file')
-    parser.add_argument('--ref_lms', type=str, default='data/reference/lms_ref.out', help='path to reference landmark file')
-    args = parser.parse_args()
+parser = argparse.ArgumentParser()
+parser.add_argument('--pose_path', type=str, default='data/poseGuide/imgs', help='path to pose guide images')
+parser.add_argument('--ref_path', type=str, default='data/reference/imgs', help='path to appearance/reference images')
+parser.add_argument('--pose_lms', type=str, default='data/poseGuide/lms_poseGuide.out', help='path to pose guide landmark file')
+parser.add_argument('--ref_lms', type=str, default='data/reference/lms_ref.out', help='path to reference landmark file')
+args = parser.parse_args()
 
 #yc
 class ExampleModel():
